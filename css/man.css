@@ -1,0 +1,52 @@
+.man_road{
+    position: relative;
+    top:-90px;
+    height: 200px;
+    width: 100%;
+}
+.man{
+    position: absolute;
+    left: -90px;
+    width: 100%;
+    animation: man 40s infinite linear;
+}
+.head{
+    display: block;
+    position: absolute;
+    height: 100px;
+    z-index: 5;
+}
+.l1{
+    display: block;
+    position: absolute;
+    top:95px;
+    height: 70px;
+    animation: leg1 3s infinite ease-in-out;
+}
+.l2{
+    display: block;
+    position: absolute;
+    top:95px;
+    left:30px;
+    height: 70px;
+    animation: leg2 3s infinite ease-in-out;
+}
+
+@keyframes man{
+    0% {transform:translate(0px,0)}
+    100% {transform:translate(120%,0)}
+}
+@keyframes leg1{
+    0% {transform:rotate(15deg) translate(0px,0)}
+    50% {transform:rotate(-20deg) translate(25px,5px)}
+    100% {transform:rotate(15deg) translate(0px,0)}
+}
+@keyframes leg2{
+    0% {transform:rotate(5deg) translate(-7px,5px)}
+    50% {transform:rotate(35deg) translate(-30px,15px)}
+    100% {transform:rotate(5deg) translate(-7px,5px)}
+}
+.man_button{
+    width: 100px;
+    height: 165px;
+}

@@ -1,0 +1,114 @@
+.leaves{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.leaf{
+    position: relative;
+    top:-150px;
+    margin: 10px;
+    width: 40px;
+    height: 30px;
+}
+.leaves .leaf:nth-child(1) {
+    left: 6%;
+    animation: leaf1 6s infinite ease-in-out;
+    animation-delay: 1s;
+}
+.leaves .leaf:nth-child(2) {
+    left: 24%;
+    animation: leaf1 5s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.leaves .leaf:nth-child(3) {
+    left: 58%;
+    animation: leaf1 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.leaves .leaf:nth-child(4) {
+    left: 22%;
+    animation: leaf1 4s infinite ease-in-out;
+    animation-delay: 1s;
+}
+.leaves .leaf:nth-child(5) {
+    left: 16%;
+    animation: leaf2 5s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.leaves .leaf:nth-child(6) {
+    left: 40%;
+    animation: leaf2 7s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.leaves .leaf:nth-child(7) {
+    left: 64%;
+    animation: leaf2 6s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.leaves .leaf:nth-child(8) {
+    left: 10%;
+    animation: leaf2 4s infinite ease-in-out;
+    animation-delay: 0s;
+}
+.leaves .leaf:nth-child(9) {
+    left: 30%;
+    animation: leaf3 5s infinite ease-in-out;
+    animation-delay: 4s;
+}
+.leaves .leaf:nth-child(10) {
+    left: 44%;
+    animation: leaf3 6s infinite ease-in-out;
+    animation-delay: 0s;
+}
+.leaves .leaf:nth-child(11) {
+    left: 70%;
+    animation: leaf3 4s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.leaves .leaf:nth-child(12) {
+    left: 88%;
+    animation: leaf3 5s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.leaves .leaf:nth-child(13) {
+    left: 26%;
+    animation: leaf4 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.leaves .leaf:nth-child(14) {
+    left: 52%;
+    animation: leaf4 5s infinite ease-in-out;
+    animation-delay: 0s;
+}
+.leaves .leaf:nth-child(15) {
+    left: 76%;
+    animation: leaf4 6s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.leaves .leaf:nth-child(16) {
+    left: 72%;
+    animation: leaf4 7s infinite ease-in-out;
+    animation-delay: 4s;
+}
+@keyframes leaf1{
+    0% {transform:rotate(-20deg) translate(0,0)}
+    50% {transform:rotate(55deg) translate(0,400px)}
+    100% {transform:rotate(55deg) translate(0,1500px)}
+}
+@keyframes leaf2{
+    0% {transform:rotate(-15deg) translate(0,0)}
+    50% {transform:rotate(50deg) translate(0,550px)}
+    100% {transform:rotate(50deg) translate(0,1500px)}
+}
+@keyframes leaf3{
+    0% {transform:rotate(-15deg) translate(0,0)}
+    50% {transform:rotate(55deg) translate(0,700px)}
+    100% {transform:rotate(55deg) translate(0,1500px)}
+}
+@keyframes leaf4{
+    0% {transform:rotate(-25deg) translate(0,0)}
+    40% {transform:rotate(60deg) translate(0,600px)}
+    100% {transform:rotate(60deg) translate(0,1500px)}
+}

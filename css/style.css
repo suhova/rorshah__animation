@@ -1,190 +1,20 @@
+@import "leaves.css";
+@import "man.css";
+@import "scrolling_text.css";
+@import "rain.css";
+
+html{
+    overflow-x:hidden;
+}
 body{
     width: 100%;
-    overflow-x: hidden;
 }
-.leaves{
-    display: block;
-    margin: auto;
-    margin-top: 50px;
+main{
+    height: 800px;
+    overflow: hidden;
+}
+.bg{
+    height: 400px;
     background-color: #FBC020;
-    width: 100%;
-    height: 500px;
     overflow: hidden;
-}
-.leaf{
-    position: relative;
-    top:-100px;
-    margin: 10px;
-    width: 40px;
-    height: 30px;
-}
-.scrolling{
-    position: absolute;
-    margin: 0 120px;
-    width: 100%;
-    height:  500px;
-    overflow: hidden;
-}
-.rorshah{
-    position: absolute;
-    width: 550px;
-    height: 450px;
-    font-weight: bolder;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: justify;
-    font-family: 'Neucha', cursive;
-    animation: scroll 20s infinite linear;
-}
-.man_road{
-    position: relative;
-    top:-90px;
-    overflow-x: hidden;
-    height: 200px;
-    width: 100%;
-}
-.man{
-    position: absolute;
-    left: -90px;
-    animation: man 100s infinite linear;
-}
-.head{
-    display: block;
-    position: absolute;
-    height: 100px;
-    z-index: 5;
-}
-.l1{
-    display: block;
-    position: absolute;
-    top:95px;
-    height: 70px;
-    animation: leg1 3s infinite ease-in-out;
-}
-.l2{
-    display: block;
-    position: absolute;
-    top:95px;
-    left:30px;
-    height: 70px;
-    animation: leg2 3s infinite ease-in-out;
-}
-@keyframes scroll {
-    0% {transform: translate(0, 115%);}
-    100% {transform: translate(0, -100%)}
-}
-
-@keyframes man{
-    0% {transform:translate(0px,0)}
-    100% {transform:translate(3000px,0)}
-}
-@keyframes leg1{
-    0% {transform:rotate(15deg) translate(0px,0)}
-    50% {transform:rotate(-20deg) translate(25px,5px)}
-    100% {transform:rotate(15deg) translate(0px,0)}
-}
-@keyframes leg2{
-    0% {transform:rotate(5deg) translate(-7px,5px)}
-    50% {transform:rotate(35deg) translate(-30px,15px)}
-    100% {transform:rotate(5deg) translate(-7px,5px)}
-}
-.leaves .leaf:nth-child(1) {
-    left: 6%;
-    animation: leaf1 6s infinite ease-in-out;
-    animation-delay: 1s;
-}
-.leaves .leaf:nth-child(2) {
-    left: 24%;
-    animation: leaf1 5s infinite ease-in-out;
-    animation-delay: 3s;
-}
-.leaves .leaf:nth-child(3) {
-    left: 58%;
-    animation: leaf1 6s infinite ease-in-out;
-    animation-delay: 2s;
-}
-.leaves .leaf:nth-child(4) {
-    left: 22%;
-    animation: leaf1 4s infinite ease-in-out;
-    animation-delay: 1s;
-}
-.leaves .leaf:nth-child(5) {
-    left: 16%;
-    animation: leaf2 5s infinite ease-in-out;
-    animation-delay: 2s;
-}
-.leaves .leaf:nth-child(6) {
-    left: 40%;
-    animation: leaf2 7s infinite ease-in-out;
-    animation-delay: 3s;
-}
-.leaves .leaf:nth-child(7) {
-    left: 64%;
-    animation: leaf2 6s infinite ease-in-out;
-    animation-delay: 3s;
-}
-.leaves .leaf:nth-child(8) {
-    left: 10%;
-    animation: leaf2 4s infinite ease-in-out;
-    animation-delay: 0s;
-}
-.leaves .leaf:nth-child(9) {
-    left: 30%;
-    animation: leaf3 5s infinite ease-in-out;
-    animation-delay: 4s;
-}
-.leaves .leaf:nth-child(10) {
-    left: 44%;
-    animation: leaf3 6s infinite ease-in-out;
-    animation-delay: 0s;
-}
-.leaves .leaf:nth-child(11) {
-    left: 70%;
-    animation: leaf3 4s infinite ease-in-out;
-    animation-delay: 2s;
-}
-.leaves .leaf:nth-child(12) {
-    left: 88%;
-    animation: leaf3 5s infinite ease-in-out;
-    animation-delay: 3s;
-}
-.leaves .leaf:nth-child(13) {
-    left: 26%;
-    animation: leaf4 6s infinite ease-in-out;
-    animation-delay: 2s;
-}
-.leaves .leaf:nth-child(14) {
-    left: 52%;
-    animation: leaf4 5s infinite ease-in-out;
-    animation-delay: 0s;
-}
-.leaves .leaf:nth-child(15) {
-    left: 76%;
-    animation: leaf4 6s infinite ease-in-out;
-    animation-delay: 3s;
-}
-.leaves .leaf:nth-child(16) {
-    left: 72%;
-    animation: leaf4 7s infinite ease-in-out;
-    animation-delay: 4s;
-}
-@keyframes leaf1{
-    0% {transform:rotate(-20deg) translate(0,0)}
-    50% {transform:rotate(55deg) translate(0,400px)}
-    100% {transform:rotate(55deg) translate(0,1500px)}
-}
-@keyframes leaf2{
-    0% {transform:rotate(-15deg) translate(0,0)}
-    50% {transform:rotate(50deg) translate(0,550px)}
-    100% {transform:rotate(50deg) translate(0,1500px)}
-}
-@keyframes leaf3{
-    0% {transform:rotate(-15deg) translate(0,0)}
-    50% {transform:rotate(55deg) translate(0,700px)}
-    100% {transform:rotate(55deg) translate(0,1500px)}
-}
-@keyframes leaf4{
-    0% {transform:rotate(-25deg) translate(0,0)}
-    40% {transform:rotate(60deg) translate(0,600px)}
-    100% {transform:rotate(60deg) translate(0,1500px)}
 }

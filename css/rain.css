@@ -1,0 +1,64 @@
+.rain_block, .snow_block{
+    visibility: hidden;
+}
+.rain {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 200%;
+    height: 600px;
+    z-index: 2;
+}
+.drop {
+    position: absolute;
+    width: 100px;
+    animation: drop linear infinite;
+}
+.back-row {
+    z-index: 1;
+    opacity: 0.5;
+}
+.front-row {
+    z-index: 2;
+    opacity: 0.8;
+}
+@keyframes drop {
+    0% {
+        transform:rotate(30deg) translate(0);
+    }
+    75% {
+        transform:rotate(30deg) translate(-30px,700px);
+    }
+    100% {
+        transform:rotate(30deg) translate(-30px,900px);
+    }
+}
+.stem {
+    width: 3px;
+    height: 70px;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    animation: stem linear infinite;
+}
+.snow {
+    width: 5px;
+    height: 6px;
+    border-radius: 100%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 1));
+    animation: stem linear infinite;
+}
+@keyframes stem {
+    0% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.35;
+    }
+    100% {
+        opacity: 0;
+    }
+}
