@@ -1,24 +1,25 @@
 .leaves{
     display: block;
+    position: relative;
     margin: auto;
     margin-top: 50px;
     width: 100%;
     height: 100%;
 }
 .leaf{
-    position: relative;
+    position: absolute;
     top:-150px;
     margin: 10px;
     width: 40px;
     height: 30px;
 }
 .leaves .leaf:nth-child(1) {
-    left: 6%;
+    left: 88%;
     animation: leaf1 6s infinite ease-in-out;
     animation-delay: 1s;
 }
 .leaves .leaf:nth-child(2) {
-    left: 24%;
+    left: 98%;
     animation: leaf1 5s infinite ease-in-out;
     animation-delay: 3s;
 }
@@ -58,7 +59,7 @@
     animation-delay: 4s;
 }
 .leaves .leaf:nth-child(10) {
-    left: 44%;
+    left: 95%;
     animation: leaf3 6s infinite ease-in-out;
     animation-delay: 0s;
 }
@@ -93,22 +94,22 @@
     animation-delay: 4s;
 }
 @keyframes leaf1{
-    0% {transform:rotate(-20deg) translate(0,0)}
+    0% {transform:rotate(-10deg) translate(0,0)}
     50% {transform:rotate(55deg) translate(0,400px)}
     100% {transform:rotate(55deg) translate(0,1500px)}
 }
 @keyframes leaf2{
-    0% {transform:rotate(-15deg) translate(0,0)}
+    0% {transform:rotate(-5deg) translate(0,0)}
     50% {transform:rotate(50deg) translate(0,550px)}
     100% {transform:rotate(50deg) translate(0,1500px)}
 }
 @keyframes leaf3{
-    0% {transform:rotate(-15deg) translate(0,0)}
+    0% {transform:rotate(-5deg) translate(0,0)}
     50% {transform:rotate(55deg) translate(0,700px)}
     100% {transform:rotate(55deg) translate(0,1500px)}
 }
 @keyframes leaf4{
-    0% {transform:rotate(-25deg) translate(0,0)}
+    0% {transform:rotate(-5deg) translate(0,0)}
     40% {transform:rotate(60deg) translate(0,600px)}
     100% {transform:rotate(60deg) translate(0,1500px)}
 }
