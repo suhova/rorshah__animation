@@ -3,12 +3,13 @@
     top:-90px;
     height: 200px;
     width: 100%;
+    overflow-x:hidden;
 }
 .man{
     position: absolute;
     left: -90px;
     width: 100%;
-    animation: man 40s infinite linear;
+    animation: man 70s infinite linear;
 }
 .head{
     display: block;

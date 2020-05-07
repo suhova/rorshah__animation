@@ -3,18 +3,77 @@
 @import "scrolling_text.css";
 @import "rain.css";
 
-html{
-    overflow-x:hidden;
-}
 body{
-    width: 100%;
+    position: relative;
+    width: 1600px;
+    margin: auto;
+    font-family: 'Neucha', cursive;
 }
 main{
+    position: absolute;
+    width: 100%;
     height: 800px;
     overflow: hidden;
 }
 .bg{
+    margin-top: 50px;
     height: 400px;
     background-color: #FBC020;
     overflow: hidden;
+}
+.text{
+    font-weight: bolder;
+    text-align: justify;
+}
+.front_text{
+    font-weight: normal;
+    width: 340px;
+    height: 70px;
+    margin: 80px;
+    margin-top: 150px;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: center;
+}
+.start-button{
+    display: block;
+    width: 200px;
+    height: 70px;
+    margin: auto;
+    background-color: #38304d;
+    font-family: 'Neucha', cursive;
+    font-size: 30px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+.start-button:hover{
+    background-color: #302940;
+    font-size: 31px;
+}
+.start-button::after{
+    padding-top: 5px;
+    display: block;
+    top:0;
+    left: -22px;
+    width: 212px;
+    height: 50px;
+    content: "СТАРТ";
+    color: #949494;
+    vertical-align: center;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: relative;
+    box-sizing: border-box;
+}
+.wrapper_text{
+    position: absolute;
+    z-index: 15;
+    width: 500px;
+    height:500px;
+    top:150px;
+    left:900px;
+    background-color: white;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }

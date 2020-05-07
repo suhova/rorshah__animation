@@ -5,16 +5,13 @@
     height:  400px;
     overflow: hidden;
 }
-.rorshah{
+.scrolling .text{
     overflow: hidden;
     position: absolute;
     width: 550px;
     height: 500px;
-    font-weight: bolder;
     font-size: 30px;
     line-height: 30px;
-    text-align: justify;
-    font-family: 'Neucha', cursive;
     animation: scroll 30s infinite linear;
 }
 @keyframes scroll {
